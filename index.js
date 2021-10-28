@@ -71,6 +71,9 @@ app.get('/', (req, res) => {
     res.send('running genius server');
 });
 
+app.get('/hello', (req, res) => {
+    res.send('Hello updated here')
+})
 // Task-5 Listening to server port
 app.listen(port, () => {
     console.log('Running Genius Server on Port', port);
