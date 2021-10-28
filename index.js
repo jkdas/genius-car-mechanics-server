@@ -9,7 +9,7 @@ require('dotenv').config();
 // Task-2 create express app
 const app = express();
 // Task-3 set port
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Task-11 add middleware
 app.use(cors());
